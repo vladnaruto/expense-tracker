@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expense Tracker</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>💰 Мої витрати</h1>
+
+<div class="stats">
+<div class="card"><span>Сьогодні</span><strong id="today">0 €</strong></div>
+<div class="card"><span>Тиждень</span><strong id="week">0 €</strong></div>
+<div class="card"><span>Місяць</span><strong id="month">0 €</strong></div>
+</div>
+
+<h2>Категорії</h2>
+<div id="cats" class="cats"></div>
+
+<div id="form" class="hidden">
+<h3 id="catTitle"></h3>
+<input id="amount" type="number" step="0.01" placeholder="Сума €">
+<input id="comment" placeholder="Коментар">
+<button onclick="saveExpense()">Зберегти</button>
+</div>
+
+<h2>Останні витрати</h2>
+<div id="list"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
